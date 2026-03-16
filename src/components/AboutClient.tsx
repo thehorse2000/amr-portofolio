@@ -17,14 +17,14 @@ export default function AboutClient() {
       
       <div className="grid gap-12 md:grid-cols-[1fr_300px] items-start">
         <div className="flex flex-col gap-8">
-          <motion.div
+          <motion.h3
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="text-2xl md:text-3xl font-bold uppercase leading-tight border-l-8 border-foreground pl-6"
           >
-            Hello! I&apos;m {bio.name}, a {bio.title} with a robust expertise in e-commerce development and AI-driven solutions.
-          </motion.div>
+            Hello! I&apos;m {bio.name}, a {bio.title} Egypt with a robust expertise in e-commerce development and AI-driven solutions.
+          </motion.h3>
           
           <motion.div 
             initial={{ y: 20, opacity: 0 }}

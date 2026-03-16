@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   keywords: ["Amr Osama", "Amr Developer", "Software Engineer Egypt", "Software Egypt", "Senior Software Engineer", "Frontend Developer Egypt", "React Developer Egypt", "Next.js Developer Egypt", "Adobe Certified Expert"],
   authors: [{ name: "Amr Osama", url: "https://amrosama.dev" }],
   creator: "Amr Osama",
+  metadataBase: new URL("https://amrosama.dev"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Amr Osama | Software Engineer Egypt | Senior Developer",
     description: "Senior Software Engineer based in Egypt. Specializing in AI-powered web applications and frontend excellence.",
@@ -35,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Amr Osama Portfolio",
     images: [
       {
-        url: "/og-image.png", // Need to make sure this exists or at least point to a valid path
+        url: "/img/amr-portofolio.jpg",
         width: 1200,
         height: 630,
         alt: "Amr Osama - Software Engineer Egypt",
@@ -49,7 +53,7 @@ export const metadata: Metadata = {
     title: "Amr Osama | Software Engineer Egypt | Senior Developer",
     description: "Senior Software Engineer based in Egypt. Specializing in AI-powered web applications and frontend excellence.",
     creator: "@amrosama5", // Assuming from linkedin/github handle
-    images: ["/og-image.png"],
+    images: ["/img/amr-portofolio.jpg"],
   },
   manifest: "/manifest.json",
   robots: {

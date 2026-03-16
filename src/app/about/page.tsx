@@ -8,5 +8,32 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
-  return <AboutClient />;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://amrosama.dev",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "About",
+        item: "https://amrosama.dev/about",
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <AboutClient />
+    </>
+  );
 }
