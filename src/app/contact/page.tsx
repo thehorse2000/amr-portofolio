@@ -28,11 +28,56 @@ export default function Contact() {
         Whether you have a question, a project in mind, or just want to say hi, my inbox is always open. I&apos;ll try my best to get back to you!
       </p>
 
-      <Button size="lg" asChild className="font-mono text-base px-8 h-12 shadow-[0_0_20px_rgba(0,255,209,0.2)] hover:shadow-[0_0_30px_rgba(0,255,209,0.4)] transition-all">
-        <Link href={`mailto:${bio.email}`}>
-          Say Hello
-        </Link>
-      </Button>
+      <form 
+        action="https://formsubmit.co/amrosama5@gmail.com" 
+        method="POST"
+        className="w-full max-w-lg flex flex-col gap-6"
+      >
+        {/* Anti-Spam / Configuration */}
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New Portfolio Inquiry!" />
+        <input type="hidden" name="_template" value="table" />
+
+        <div className="flex flex-col gap-2 text-left">
+          <label htmlFor="name" className="font-black uppercase text-sm tracking-widest">Name</label>
+          <input 
+            type="text" 
+            name="name" 
+            id="name"
+            required 
+            placeholder="YOUR NAME"
+            className="w-full bg-background border-4 border-foreground p-4 font-black uppercase placeholder:text-muted-foreground/50 focus:bg-primary focus:outline-none shadow-brutalist transition-all focus:translate-x-[2px] focus:translate-y-[2px] focus:shadow-none"
+          />
+        </div>
+
+        <div className="flex flex-col gap-2 text-left">
+          <label htmlFor="email" className="font-black uppercase text-sm tracking-widest">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email"
+            required 
+            placeholder="YOUR@EMAIL.COM"
+            className="w-full bg-background border-4 border-foreground p-4 font-black uppercase placeholder:text-muted-foreground/50 focus:bg-primary focus:outline-none shadow-brutalist transition-all focus:translate-x-[2px] focus:translate-y-[2px] focus:shadow-none"
+          />
+        </div>
+
+        <div className="flex flex-col gap-2 text-left">
+          <label htmlFor="message" className="font-black uppercase text-sm tracking-widest">Message</label>
+          <textarea 
+            name="message" 
+            id="message"
+            rows={4}
+            required 
+            placeholder="WHAT'S ON YOUR MIND?"
+            className="w-full bg-background border-4 border-foreground p-4 font-black uppercase placeholder:text-muted-foreground/50 focus:bg-primary focus:outline-none shadow-brutalist transition-all focus:translate-x-[2px] focus:translate-y-[2px] focus:shadow-none resize-none"
+          />
+        </div>
+
+        <Button type="submit" size="lg" className="h-20 text-2xl font-black uppercase border-4 border-foreground shadow-brutalist hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
+          Send Message
+        </Button>
+      </form>
 
       <div className="flex gap-6 mt-16 pt-8 border-t border-border/40 w-full justify-center">
         <Link href={bio.github} target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
