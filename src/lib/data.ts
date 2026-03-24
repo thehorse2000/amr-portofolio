@@ -135,6 +135,7 @@ export const sections = [
   { id: "intro", label: "Introduction", path: "/" },
   { id: "about", label: "About Me", path: "/about" },
   { id: "projects", label: "Projects", path: "/projects" },
+  { id: "open-source", label: "Open Source", path: "/open-source" },
   { id: "skills-tools", label: "Skills & Tools", path: "/skills-tools" },
   { id: "experience", label: "Experience", path: "/experience" },
   { id: "education", label: "Education", path: "/education" },
