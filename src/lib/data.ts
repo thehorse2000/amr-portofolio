@@ -23,6 +23,44 @@ export const projects = [
     tags: ["ElectronJS", "Vue.js", "SQLite", "Sequelize", "Firebase"],
     github: "",
     live: ""
+  },
+  {
+    title: "dataprompt",
+    description: "AI-powered analytics platform that lets business users ask questions in plain English and get instant visualizations — no SQL or technical expertise required. Built with a read-only database connection model to keep business data secure.",
+    tags: ["AI", "Analytics", "Next.js", "Data Visualization"],
+    github: "",
+    live: "https://dataprompt.cairostack.com"
+  },
+  {
+    title: "TryON",
+    description: "Virtual try-on platform for fashion brands in Egypt. Customers upload a photo and receive high-quality previews of products styled on their own appearance in seconds — shareable via Instagram, WhatsApp, and social platforms.",
+    tags: ["AI", "Computer Vision", "Fashion Tech", "E-commerce"],
+    github: "",
+    live: "https://tryon.cairostack.com"
+  },
+  {
+    title: "gopodcast.me",
+    description: "Converts articles, PDFs, and text into high-quality audio podcasts instantly. Built for creators, students, and publishers who want to expand their reach through audio — with multi-language AI voice support and an embeddable player.",
+    tags: ["AI", "Text-to-Speech", "Next.js", "Audio"],
+    github: "",
+    live: "https://gopodcast.me"
+  }
+];
+
+export const openSourceProjects = [
+  {
+    title: "dubbify",
+    description: "AI-generated dubbing for audio and video files. Leverages OpenAI and ElevenLabs APIs to automatically translate and re-voice content in multiple languages.",
+    tags: ["Python", "OpenAI", "ElevenLabs", "AI", "Audio/Video"],
+    github: "https://github.com/thehorse2000/dubbify",
+    live: ""
+  },
+  {
+    title: "vibedepot",
+    description: "Open-source desktop app store for AI-native apps. Bring your own API key, run everything locally, and publish your own app in minutes.",
+    tags: ["TypeScript", "Desktop", "AI", "Open Source"],
+    github: "https://github.com/thehorse2000/vibedepot",
+    live: "https://vibe-depot.com"
   }
 ];
 
