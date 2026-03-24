@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/projects',
+    '/open-source',
     '/skills-tools',
     '/experience',
     '/education',
